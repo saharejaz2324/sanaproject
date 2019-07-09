@@ -12,3 +12,17 @@ C:\Users\saar\source\repos\customerService\customerService\obj\Debug\netcoreapp2
 C:\Users\saar\source\repos\customerService\customerService\obj\Debug\netcoreapp2.1\customerService.RazorTargetAssemblyInfo.cache
 C:\Users\saar\source\repos\customerService\customerService\obj\Debug\netcoreapp2.1\customerService.dll
 C:\Users\saar\source\repos\customerService\customerService\obj\Debug\netcoreapp2.1\customerService.pdb
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\bin\Debug\netcoreapp2.1\customerService.deps.json
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\bin\Debug\netcoreapp2.1\customerService.runtimeconfig.json
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\bin\Debug\netcoreapp2.1\customerService.runtimeconfig.dev.json
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\bin\Debug\netcoreapp2.1\customerService.dll
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\bin\Debug\netcoreapp2.1\customerService.pdb
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.csprojAssemblyReference.cache
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.csproj.CoreCompileInputs.cache
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.RazorAssemblyInfo.cache
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.RazorAssemblyInfo.cs
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.AssemblyInfoInputs.cache
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.AssemblyInfo.cs
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.RazorTargetAssemblyInfo.cache
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.dll
+C:\Users\sej\Source\Repos\sana-rooj\webapi\customerService\obj\Debug\netcoreapp2.1\customerService.pdb

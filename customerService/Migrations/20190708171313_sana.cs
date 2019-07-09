@@ -1,0 +1,92 @@
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace customerService.Migrations
+{
+    public partial class sana : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    Order_Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Total_Items = table.Column<int>(nullable: false),
+                    Total_Price = table.Column<float>(nullable: false),
+                    Total_Tax = table.Column<float>(nullable: false),
+                    Total_Sum_Tax = table.Column<float>(nullable: false),
+                    Order_Status = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.Order_Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Product_Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Product_Name = table.Column<string>(nullable: true),
+                    Product_Des = table.Column<string>(nullable: true),
+                    Product_Price = table.Column<float>(nullable: false),
+                    Product_Tax = table.Column<float>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Product_Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders_Products",
+                columns: table => new
+                {
+                    SerialNo = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Order_Id = table.Column<int>(nullable: true),
+                    Product_Id = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders_Products", x => x.SerialNo);
+                    table.ForeignKey(
+                        name: "FK_Orders_Products_Orders_Order_Id",
+                        column: x => x.Order_Id,
+                        principalTable: "Orders",
+                        principalColumn: "Order_Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Orders_Products_Products_Product_Id",
+                        column: x => x.Product_Id,
+                        principalTable: "Products",
+                        principalColumn: "Product_Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orders_Products_Order_Id",
+                table: "Orders_Products",
+                column: "Order_Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orders_Products_Product_Id",
+                table: "Orders_Products",
+                column: "Product_Id");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Orders_Products");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Products");
+        }
+    }
+}
